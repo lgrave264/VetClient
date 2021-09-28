@@ -1,0 +1,53 @@
+/* dark shades of primary color*/
+/* The primary/main color */
+/* lighter shades of primary color */
+/* dark shades of secondary color*/
+/* secondary color */
+/* lighter shades of secondary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/* lightest grey - used for outlines */
+/* Other Colors used */
+div.pet {
+  display: block;
+  margin: 1rem auto;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem rgba(34, 34, 34, 0.5);
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 60vh;
+}
+div.pet div#img {
+  margin: -1rem -1rem 0 -1rem;
+  height: 70%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+div.pet div#img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.pet div#info {
+  height: 30%;
+}
+div.pet div#info div {
+  display: flex;
+  justify-content: space-between;
+  color: orange;
+}
+div.pet div#info div h1 {
+  font-size: calc(3vh + 3vw);
+}
+div.pet div#info h2 {
+  font-size: calc(1.5vh + 1.5vw);
+  color: #2e73b8;
+}
+div.pet:hover {
+  margin-top: -1rem;
+  transition: margin-top 0.3s;
+}/*# sourceMappingURL=index.css.map */
