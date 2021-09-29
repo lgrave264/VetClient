@@ -2,6 +2,8 @@ import React from 'react';
 import data from './data';
 import Pet from './Components/Pet';
 import Navbar from './Components/Navbar';
+import About from './Components/About';
+import Footer from './Components/Footer';
 
 function App(){
     const pets = data;
@@ -9,7 +11,7 @@ function App(){
     return(
         <>
             <Navbar/>
-            <p></p>
+            <About/>
             <hr/>
             <div id='pets'>
                 {
@@ -18,6 +20,7 @@ function App(){
                     })
                 }
             </div>
+            <Footer/>
         </>
     )
 }
