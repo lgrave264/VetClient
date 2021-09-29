@@ -29,7 +29,12 @@ div.pet {
       justify-content: space-between;
       color: orange;
       h1 {
-        font-size: calc(3vh + 3vw);
+        //@media only screen and (max-width: 730px) {
+        font-size: calc(2vh + 2vw);
+        //}
+        @media only screen and (max-width: 500px) {
+          font-size: calc(3vh + 3vw);
+        }
       }
     }
     h2 {

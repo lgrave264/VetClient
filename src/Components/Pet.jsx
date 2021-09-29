@@ -1,12 +1,12 @@
 import React from 'react'
 
 const Pet = ({data}) => {
-    const {img, name, breed, age} = data;
+    const {images, name, breed, age} = data;
 
     return (
         <div className='pet'>
             <div id='img'>
-                <img src={img} alt={name} />
+                <img src={images[0].asset._ref} alt={name} />
             </div>
             <div id='info'>
                 <div>
