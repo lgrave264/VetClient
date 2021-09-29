@@ -1,14 +1,16 @@
 import React from 'react';
 import data from './data';
 import Pet from './Components/Pet';
+import Navbar from './Components/Navbar';
 
 function App(){
     const pets = data;
 
     return(
         <>
-            <h1 style={{textAlign: 'center'}}>Here are our pets!</h1>
-            <hr />
+            <Navbar/>
+            <p></p>
+            <hr/>
             <div id='pets'>
                 {
                     pets.map((pet) => {
