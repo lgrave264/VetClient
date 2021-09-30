@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Footer from './Components/Footer';
 import SinglePet from './Components/SinglePet';
+import Filter from './Components/Filter';
 
 const sanityClient = require('@sanity/client')
 const client = sanityClient({
@@ -33,16 +34,25 @@ function App(){
             }).catch((error) => {console.log(error)})
     },[])
 
-    return(
+
+
+
+    return ( 
         <>
             <Navbar/>
             <About/>
+
+            <Filter></Filter>
             <hr/>
             <div id='pets'>
+                
                 {
                     pets.map((pet) => {
                         return <Pet data={pet} key={pet._id} />
                     })
+
+                    
+                    
                 }
             </div>
             {!loading && <SinglePet data={pets[0]} />}

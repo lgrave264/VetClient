@@ -328,6 +328,36 @@ div.pet:hover {
   transition: margin-top 0.3s;
 }
 
+.filtercomp {
+  background-color: rgba(253, 245, 230, 0.565);
+  display: block;
+  width: 100%;
+  border-radius: 3%;
+}
+
+#filterbox {
+  background-color: #d1cfcf;
+  color: black;
+  padding: 1rem;
+  border-radius: 2%;
+  text-align: center;
+  display: block;
+  line-break: loose;
+  width: 8rem;
+}
+
+#gendersl {
+  color: black;
+}
+
+.gendf {
+  color: palevioletred;
+}
+
+.gendm {
+  color: #46b2ff;
+}
+
 #title {
   display: block;
   text-align: center;
