@@ -312,7 +312,12 @@ div.pet div#info div {
   color: orange;
 }
 div.pet div#info div h1 {
-  font-size: calc(3vh + 3vw);
+  font-size: calc(2vh + 2vw);
+}
+@media only screen and (max-width: 500px) {
+  div.pet div#info div h1 {
+    font-size: calc(3vh + 3vw);
+  }
 }
 div.pet div#info h2 {
   font-size: calc(1.5vh + 1.5vw);
@@ -500,6 +505,15 @@ div.pet:hover {
 
 #footer {
   bottom: 0;
+}
+
+div.singlePet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
