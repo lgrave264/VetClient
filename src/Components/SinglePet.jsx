@@ -1,8 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const SinglePet = (data) => {
-    console.log(data);
-    const {age, biography, breed, coloring, gender, male, images, likesCats, likesDogs, name, pounds, species} = data.data;
+const SinglePet = ({data}) => {
+    const {age, biography, breed, coloring, gender, male, images, likesCats, likesDogs, name, pounds, species} = data;
 
     return (
         <div className='singlePet'>

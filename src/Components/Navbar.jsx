@@ -11,7 +11,6 @@ const checkSize = () => {
 };
 
 useEffect(() => {
-    console.log('useEffect');
     window.addEventListener('resize', checkSize);
 }, []);
 
