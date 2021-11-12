@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Pet = ({data}) => {
+const Pet = ({data, setSelectedPet, index}) => {
     const {images, name, breed, age} = data;
 
     return (
-        <div className='pet'>
+        <div className='pet' onClick={() => {setSelectedPet(index)}}>
             <div id='img'>
                 <img src={images[0].asset._ref} alt={name} />
             </div>

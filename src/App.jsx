@@ -18,7 +18,9 @@ const query = "*[_type == 'pet']";
 
 function App(){
     const [pets, setPets] = useState([]);
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+
+    const [selectedPet, setSelectedPet] = useState(-1);
 
 
     const getPets = async() => {
@@ -47,15 +49,15 @@ function App(){
             <div id='pets'>
                 
                 {
-                    pets.map((pet) => {
-                        return <Pet data={pet} key={pet._id} />
+                    pets.map((pet, index) => {
+                        return <Pet data={pet} setSelectedPet={setSelectedPet} index={index} key={pet._id} />
                     })
 
                     
                     
                 }
             </div>
-            {!loading && <SinglePet data={pets[0]} />}
+            {(!loading && selectedPet > -1) ? <SinglePet data={pets[selectedPet]} setSelectedPet={setSelectedPet} /> : ''}
             <Footer/>
         </>
     )

@@ -300,8 +300,7 @@ div.pet div#img {
 }
 div.pet div#img img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 div.pet div#info {
   height: 30%;
@@ -329,17 +328,14 @@ div.pet:hover {
 }
 
 .filtercomp {
-  background-color: rgba(253, 245, 230, 0.565);
-  display: block;
-  width: 100%;
-  border-radius: 3%;
+  background-color: rgba(253, 245, 230, 0);
+  box-shadow: black 2px;
 }
 
 #filterbox {
-  background-color: #d1cfcf;
+  background-color: #e9e9e9;
   color: black;
   padding: 1rem;
-  border-radius: 2%;
   text-align: center;
   display: block;
   line-break: loose;
@@ -348,14 +344,6 @@ div.pet:hover {
 
 #gendersl {
   color: black;
-}
-
-.gendf {
-  color: palevioletred;
-}
-
-.gendm {
-  color: #46b2ff;
 }
 
 #title {
@@ -545,6 +533,22 @@ div.singlePet {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
 }
+div.singlePet div.singlePetInfo {
+  display: grid;
+  margin-top: 10vh;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1rem;
+  width: 80vw;
+  height: 80vh;
+  padding: 2vw;
+  background-color: #003296;
+  grid-template-columns: 50% 50%;
+}
+div.singlePet div.singlePetInfo ul li {
+  list-style-type: circle;
+  margin: 0.5rem;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -625,4 +629,6 @@ div#pets {
   div#pets {
     grid-template-columns: 90%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
